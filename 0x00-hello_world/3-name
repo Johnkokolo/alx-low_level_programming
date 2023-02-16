@@ -1,2 +1,2 @@
 #!/bin/bash
-gss $CFILE -o cisfun
+gss $CFILE -c cisfun
