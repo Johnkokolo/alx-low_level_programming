@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
- * main - the 6th work 
+ * main - the 6th work
  * Return: Always 0 success
  */
 int main(void)
 {
-	printf("size of char: %l byte(s)\n", sizeof(char));
-	printf("size of an int: %2 byte(s)\n", sizeof(int));
-	printf("size of long int: %3 byte(s)\n", sizeof(long int));
-	printf("size of long long int: %4 byte(s), sizeof(long long int));
-	printf("size of float: %5 byte(s)\n", sizeof(float);
+	printf("Size of char: %ld byte(s)\n", sizeof(char));
+	printf("Size of an int: %ld byte(s)\n", sizeof(int));
+	printf("Size of long int: %ld byte(s)\n", sizeof(long int));
+	printf("Size of long long int: %ld byte(s)\n", sizeof(long long int));
+	printf("Size of float: %ld byte(s)\n", sizeof(float));
 	return (0);
-}	
-
+}
