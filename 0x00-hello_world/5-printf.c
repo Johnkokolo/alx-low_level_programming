@@ -1,4 +1,4 @@
-#include <Stdio.h>
+#include <stdio.h>
 /**
  * main - always learning 
  * Return: Always 0 success
