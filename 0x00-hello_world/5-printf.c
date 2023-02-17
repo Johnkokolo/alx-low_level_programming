@@ -1,11 +1,11 @@
 #include <Stdio.h>
 /**
-* main - program is to print string
+* main - always learning 
 * Return: Always 0 success
 */
 
 int man(void)
 {
-	printf("proper programming, always great,\n");
+	printf("proper programming, always great");
 	return (0);
 }
