@@ -1,7 +1,7 @@
 #include <Stdio.h>
 /**
-* main - program to print a string
-* Return: Always 0 (success)
+* main - program is to print string
+* Return: Always 0 success
 */
 
 int man(void)
@@ -9,4 +9,3 @@ int man(void)
 	printf("proper programming, always great,\n");
 	return (0);
 }
- 
