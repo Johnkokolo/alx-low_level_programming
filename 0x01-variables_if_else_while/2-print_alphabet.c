@@ -14,6 +14,6 @@ int main(void)
 		ch++;
 	}
 	putchar("\n");
-	Ireturn (0);
+	return (0);
 }	
 
