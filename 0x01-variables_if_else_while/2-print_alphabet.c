@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - returns alphabets
  *
@@ -16,4 +17,3 @@ int main(void)
 	putchar("\n");
 	return (0);
 }	
-
