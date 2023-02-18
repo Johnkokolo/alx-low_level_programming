@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- *  main - print single digit numbers
+ * main - print single digit numbers
  *
- *  Description: print single digits numbers with commas
- *  Return: always return 0
+ * Description: print single digits numbers with commas
+ * Return: always return 0
  */
 int main(void)
 {
