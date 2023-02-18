@@ -2,7 +2,7 @@
 /**
  * main - print single digit numbers
  *
- * Description: print single digits numbers with commas
+ * Description: print single digits numbers
  * Return: always return 0
  */
 int main(void)
