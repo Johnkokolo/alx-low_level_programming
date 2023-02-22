@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _isalpha - check the code 
- * @c: code to be checked 
+ * _isalpha - check the code
+ * @c: code to be checked
  *
  * Return: 1 if character is a letter,0 otherwise
  */
