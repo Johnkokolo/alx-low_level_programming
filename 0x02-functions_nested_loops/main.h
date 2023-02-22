@@ -13,6 +13,6 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
-int _putchar(ch c);
+int _putchar(char c);
 
-#end if 
+#endif 
