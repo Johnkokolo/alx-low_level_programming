@@ -5,8 +5,10 @@
  * Return: always 0
  */
 int main(void)
+
 {
 	int i;
+	
 	printf("infinte loop incoming :(\n");
 
 	i = 0;
