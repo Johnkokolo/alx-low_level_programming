@@ -2,15 +2,15 @@
 
 /**
  * main - causes an infinte loop
- * return: always 0
+ * Return: always 0
  */
 
 int main(void)
 {
 	int i;
-
+	
 	printf("infinte loop incoming :(\n");
-
+	
 	i = 0;
 	
 	while (i < 10)
@@ -18,6 +18,6 @@ int main(void)
 		putchar(i);
 	}
 	printf("infinte loop avoided! \\o/\n");
-
+	
 	return (0);
 }
