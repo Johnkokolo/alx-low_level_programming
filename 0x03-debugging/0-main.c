@@ -5,7 +5,6 @@
  * Return: 0
  */
 int main(void)
-
 {
 	int i;
 
@@ -14,4 +13,3 @@ int main(void)
 	
 	return (0);
 }
-
