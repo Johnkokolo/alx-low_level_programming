@@ -6,7 +6,6 @@
  *
  * Return: 0 or 1
  */
-
 int _ispper(int c)
 {
 	if (c >= 'A' && <= 'z')
