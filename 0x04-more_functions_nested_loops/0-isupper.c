@@ -6,7 +6,7 @@
  *
  * Return: 0 or 1
  */
-int _ispper(int c)
+int _isupper(int c)
 {
 	if (c >= 'A' && <= 'z')
 	{
