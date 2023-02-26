@@ -10,8 +10,11 @@
 int _ispper(int c)
 {
 	if (c >= 'A' && <= 'z')
+	{
 		return (1);
+	}
 	else
+	{
 		return (0);
+	}
 }
-
