@@ -1,4 +1,4 @@
-#ifndef "MAIN_H"
+#include "main.h"
 
 /**
  * swap_int - swaps the valuesof two integers
