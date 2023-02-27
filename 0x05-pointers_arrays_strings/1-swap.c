@@ -1,5 +1,4 @@
 #ifndef "MAIN_H"
-#difine "MAIN_H"
 
 #include "main.h"
 /**
