@@ -1,27 +1,24 @@
 #include "main.h"
+
 /**
- * puts2 - function should print only one character out of two
- * starting with the fist one
- * @str: input
- * Rturn: 0
- */
+* puts2 - Prints every other character of a string
+* @str: The string to be treated
+* Return: void
+*/
+
 void puts2(char *str)
 {
-	int z = 0;
-	int a = 0;
-	char *p = str;
-	int o;
+	int m;
+	int l = 0;
 
-	while (*p != '\0')
+	while (str[l] != '\0')
 	{
-		p++;
-		z++;
+		l++;
 	}
 
-	a = z - 1;
-	for (o = 0; o <= a; o++)
+	for (m = 0; m < l; m += 2)
 	{
-		putchar(str[0]);
+		putchar(str[l]);
 	}
 	putchar('\n');
 }
