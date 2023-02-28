@@ -12,7 +12,7 @@ void puts2(char *str)
 	char *j = str;
 
 	int (i);
-	while (*j = '\n')
+	while (*j  = '\n')
 	{
 		j++;
 		a++;
