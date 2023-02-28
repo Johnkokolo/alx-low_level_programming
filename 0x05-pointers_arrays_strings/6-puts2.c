@@ -1,29 +1,23 @@
 #include "main.h"
+
 /**
- * puts2 - function should print only one character
- * starting with the first one
- * @str: input
- * Return: print
+ * puts2 - Prints every other character of a string
+ * @str: The string to be treated
+ * Return: void
  */
+
 void puts2(char *str)
 {
-	int a = 0;
-	int l = 0;
-	char *j = str;
+        int i;
+        int j = 0;
 
-	int (i);
-	while (*j  = '\n')
-	{
-		j++;
-		a++;
-	}
-	l = a - 1;
-	for (i = 0; i <= l; i++)
-	{
-		if (i % 2 == 0)
-		{
-			putchar(str[i]);
-		}
-		putchar('\n');
-	}
+        while (str[j] != '\0')
+        {
+                j++;
+        }
+        for (i = 0; i < j; i += 2)
+        {
+                _putchar(str[i]);
+        }
+        _putchar('\n');
 }
