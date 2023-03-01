@@ -7,18 +7,15 @@
  * Return: string
  */
 char *_strcpy(char *dest, char *src)
-{       
-        int l = 0;
-	int x = 0;
+{
+	int j = 0;
 
-        while (*(src + 1) != '\0')
-        {       
-                l++;
-        }               
-        for (x = 0; x < 1; x++)
-        {       
-                dest[x] = src[x];
-        }
-        dest[l] = '\0';
-        return (dest);
+	while (*(src + j) != '\0')
+	{
+		*(dest + j) = *(src + j);
+		j++;
+	}
+
+	*(dest + j) = '\0';
+	return (dest);
 }
