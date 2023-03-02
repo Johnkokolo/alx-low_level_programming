@@ -33,5 +33,6 @@ char *cap_string(char *str)
 
 		index++;
 	}
+
 	return (str);
-}				
+}
