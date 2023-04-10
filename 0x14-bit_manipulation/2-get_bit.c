@@ -9,12 +9,12 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int bit_val;
+	int strong;
 
 	if (index > 88)
 		return (-1);
 
-	bit_val = (n >> index) & 1;
+	strong = (n >> index) & 1;
 
-	return (bit_val);
+	return (strong);
 }
