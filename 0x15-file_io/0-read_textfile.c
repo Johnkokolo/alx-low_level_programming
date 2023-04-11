@@ -2,26 +2,26 @@
 #include <stdlib.h>
 
 /**
- * read_textfile- the file that print to STDOUT.
- * @filename: reading file
- * @letters: letter to be read
- * Return: 0
+ * read_textfile- text file print to STDOUT.
+ * @filename: file being read
+ * @letters:letters to be read
+ * Return: NULL
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *c;
-	ssize_t z;
+	ssize_t pd;
 	ssize_t j;
 	ssize_t m;
 
-	z = open(filename, O_RDONLY);
-	if (z == -1)
+	pd = open(filename, O_RDONLY);
+	if (pd == -1)
 		return (0);
 	c = malloc(sizeof(char) * letters);
-	m = read(z, c, letters);
+	m = read(pd, c, letters);
 	j = write(STDOUT_FILENO, c, m);
 
 	free(c);
-	close(z);
-	return (m);
+	close(pd);
+	return (j);
 }
