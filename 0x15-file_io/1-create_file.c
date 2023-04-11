@@ -7,7 +7,7 @@
  *
  * Return: -1
  */
-int create_file(const char *filename, char *text_content)
+int create_file(const char *n, char *s)
 {
 	int jk, m, len = 0;
 
