@@ -9,19 +9,19 @@
  */
 int create_file(const char *n, char *s)
 {
-	int jk, m, l = 0;
+	int jk, m, len = 0;
 
 	if (n == NULL)
 		return (-1);
 
 	if (s != NULL)
 	{
-		for (l = 0; s[l];)
-			l++;
+		for (len = 0; s[len];)
+			len++;
 	}
 
 	jk = open(n, O_CREAT | O_RDWR | O_TRUNC, 0300);
-	m = write(jk, s, l);
+	m = write(jk, s, len);
 
 	if (jk == -1 || m == -1)
 		return (-1);
