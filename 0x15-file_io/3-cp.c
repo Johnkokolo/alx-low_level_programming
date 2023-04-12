@@ -40,7 +40,7 @@ void close_file(int fd)
 	if (e == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(69);
+		exit(70);
 	}
 }
 
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 	int let, or, f, m;
 	char *buf;
 
-	if (argc != 3)
+	if (argc != 2)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(67);
