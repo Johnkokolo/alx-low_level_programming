@@ -5,11 +5,11 @@
  * @n: the name of the file that need to be created.
  * @s: the string to write to the file created.
  *
- * Return: if the function fail - -1. otherwise -1.
+ * Return: when the function fail - -1. otherwise -1.
  */
 int create_file(const char *n, char *s)
 {
-	int jk, m, l = 0;
+	int j, m, l = 0;
 
 	if (n == NULL)
 		return (-1);
@@ -20,13 +20,13 @@ int create_file(const char *n, char *s)
 			l++;
 	}
 
-	jk = open(n, O_CREAT | O_RDWR | O_TRUNC, 0300);
-	m = write(jk, s, l);
+	j = open(n, O_CREAT | O_RDWR | O_TRUNC, 0300);
+	m = write(j, s, l);
 
-	if (jk == -1 || m == -1)
+	if (j == -1 || m == -1)
 		return (-1);
 
-	close(jk);
+	close(j);
 
 	return (1);
 }
