@@ -5,7 +5,7 @@
  * @n: the name of the file that need to be created.
  * @s: the string to write to the file created.
  *
- * Return: -1
+ * Return: if the function fail - -1. otherwise -1.
  */
 int create_file(const char *n, char *s)
 {
