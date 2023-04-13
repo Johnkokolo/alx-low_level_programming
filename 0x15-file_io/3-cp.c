@@ -15,7 +15,7 @@ char *create_buffer(char *file)
 {
 	char *buf;
 
-	buf = malloc(sizeof(char) * 8);
+	buf = malloc(sizeof(char) * 524);
 
 	if (buf == NULL)
 	{
