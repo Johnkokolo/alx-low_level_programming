@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 char *create_buffer(char *file);
-void close_file(int jl);
+void close_file(int fd);
 
 /**
  * create_buffer - 1024 bytes for a buffer allocated.
@@ -29,17 +29,17 @@ char *create_buffer(char *file)
 
 /**
  * close_file - file descriptors closed.
- * @jl: The file descriptor to be closed.
+ * @fd: The file descriptor to be closed.
  */
-void close_file(int jl)
+void close_file(int fd)
 {
 	int i;
 
-	i = close(jl);
+	i = close(fd);
 
 	if (i == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close argc %d\n", jl);
+		dprintf(STDERR_FILENO, "Error: Can't close argc %d\n", fd);
 		exit(100);
 	}
 }
@@ -59,7 +59,7 @@ void close_file(int jl)
 int main(int argc, char *argv[])
 {
 	int from, to, z, i;
-	char *buffer;
+	char *buf;
 
 	if (argc != 3)
 	{
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 		z = read(f1, buf, 1024);
 		f2 = open(argv[2], O_WRONLY | O_APPEND);
 
-	} while (r > 0);
+	} while (z > 0);
 
 	free(buf);
 	close_file(f1);
