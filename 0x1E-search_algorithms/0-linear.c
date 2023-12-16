@@ -8,7 +8,7 @@
  * value: The value to search for.
  *
  * Return: if the value is not pressent or the array is NULL, -1.
- * otherwise, the first index where the value is locates
+ * otherwise, the first index where the value is located.
  */
 int linear_search(int *array, size_t size, int value)
 {
